@@ -94,4 +94,4 @@ b -> [("bale", 1)]
 k -> [("kangaroo", 0)]
 ```
 - Kết thúc duyệt S, tìm các hash mà có hash(key).length = hash(value) cho vào 1 nhóm gọi là nhóm xâu con của S.
-- Trả về w có value (xâu dài nhất) trong nhóm này.
+- Trả về w có value lớn nhất(xâu dài nhất) trong nhóm này.
