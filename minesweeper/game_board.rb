@@ -4,6 +4,7 @@ class GameBoard
   MINE = 'x' # dẫm vào mìn rồi em ơi
   TOTAL_CELLS = BOARD_SIZE * BOARD_SIZE # kích thước của lưới
   DIFFICULTY = 0.7 # xác xuất để 1 ô không phải là mìn
+  EMPTY_CELL = '•' # ô trống <- đây không phải là mìn
 
   attr_reader :visible_board, :mine_board
   def initialize

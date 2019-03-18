@@ -64,3 +64,10 @@ for i in range(0, N):
     remaining_mines -= 1 
   remaining_cells -= 1
 ```
+
+### Khai triển
+- Step 1:
+    + coordinates.rb: tạo struct của 1 ô lưới (1 ô lưới có toạ độ x, y) 
+    + game_board.rb: khởi tạo lưới và đặt mìn
+- Step 2:
+    + game.rb: triển khai logic của game
