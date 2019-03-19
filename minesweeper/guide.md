@@ -72,3 +72,10 @@ for i in range(0, N):
 - Step 2:
     + game.rb: triển khai logic của game
     + ui.rb: tạo giao diện người dùng
+- Step 3:
+    + minesweeper.rb: triển khai game thôi anh em.
+- Run: 
+``` sh
+ruby minesweeper/minesweeper.rb 
+```
+- Reference: [Minesweeper by kfrn](https://github.com/kfrn/minesweeper-ruby)
