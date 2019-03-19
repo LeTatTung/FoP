@@ -71,3 +71,4 @@ for i in range(0, N):
     + game_board.rb: khởi tạo lưới và đặt mìn
 - Step 2:
     + game.rb: triển khai logic của game
+    + ui.rb: tạo giao diện người dùng
