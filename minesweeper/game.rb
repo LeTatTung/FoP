@@ -57,7 +57,7 @@ class Game
 
   #check xem số user nhập vào có nằm trong phạm vi cho phép của lưới ko
   def number_in_range? input
-    input.to_i.between?(1..GameBoard::BOARD_SIZE)
+    input.to_i.between?(1, GameBoard::BOARD_SIZE)
   end
 
   # chú ý là hệ toạ độ tính từ dưới lên trên, từ trái qua phải
@@ -87,9 +87,9 @@ class Game
   def get_surrounding_cell_coords coordinates
     surrounding_cell_coords = []
     # ô bên trái
-    surrounding_cell_coords.push(CoordinatePair.new(coordinates.x -1, coordinates.y)) if coordinates.x >= 1
+    surrounding_cell_coords.push(CoordinatePair.new(coordinates.x - 1, coordinates.y)) if coordinates.x >= 1
     # ô bên phải
-    surrounding_cell_coords.push(CoordinatePair.new(coordinates.x +1, coordinates.y)) if coordinates.x < GameBoard::BOARD_SIZE - 1
+    surrounding_cell_coords.push(CoordinatePair.new(coordinates.x + 1, coordinates.y)) if coordinates.x < GameBoard::BOARD_SIZE - 1
     # ô bên trên
     surrounding_cell_coords.push(CoordinatePair.new(coordinates.x, coordinates.y -  1)) if coordinates.y >= 1
     # ô bên dưới

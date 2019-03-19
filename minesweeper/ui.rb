@@ -55,8 +55,8 @@ class UI
   end
 
   def prompt_user_guess coordinate
-    puts "Nhập giá trị #{coordinate} nằm trong khoảng 1 #{GameBoard::BOARD_SIZE}"
-    get.chomp.to_i
+    puts "Nhập giá trị #{coordinate} nằm trong khoảng 1-#{GameBoard::BOARD_SIZE}"
+    gets.chomp.to_i
   end
 
   def print_wrong_input_message
