@@ -5,7 +5,7 @@ class GameBoard
   TOTAL_CELLS = BOARD_SIZE * BOARD_SIZE # kích thước của lưới
   DIFFICULTY = 0.7 # xác xuất để 1 ô không phải là mìn
   EMPTY_CELL = '•' # ô trống <- đây không phải là mìn
-
+  MINE_FLAG = '⚑' # đặt cờ khi biết vị trí chắc chắn có mìn
   attr_reader :visible_board, :mine_board
   def initialize
     @visible_board = generate_clean_grid
